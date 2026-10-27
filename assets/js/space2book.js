@@ -26,14 +26,37 @@
 	var frame = null;
 	var lastTrigger = null;
 
+	/**
+	 * Returns the URL as an absolute http(s) URL, or an empty string. Data
+	 * attributes are not protocol-filtered by WordPress, so never load e.g.
+	 * `javascript:` URLs into the iframe.
+	 *
+	 * @param {string|null} url Raw URL.
+	 * @return {string} Safe URL or empty string.
+	 */
+	function safeUrl( url ) {
+		var parsed;
+
+		if ( ! url ) {
+			return '';
+		}
+		try {
+			parsed = new window.URL( url, window.location.href );
+		} catch ( e ) {
+			return '';
+		}
+
+		return parsed.protocol === 'https:' || parsed.protocol === 'http:' ? parsed.href : '';
+	}
+
 	function contextFor( element ) {
 		return {
 			venue: element.getAttribute( 'data-space2book-venue' ) || '',
 			language: element.getAttribute( 'data-space2book-language' ) || '',
-			url:
+			url: safeUrl(
 				element.getAttribute( 'data-space2book-embed-url' ) ||
-				element.getAttribute( 'href' ) ||
-				'',
+				element.getAttribute( 'href' )
+			),
 			element: element,
 		};
 	}
@@ -175,7 +198,7 @@
 		if ( driver && typeof driver.mountInline === 'function' ) {
 			var iframe = element.querySelector( 'iframe' );
 			var context = contextFor( element );
-			context.url = iframe ? iframe.getAttribute( 'src' ) : '';
+			context.url = safeUrl( iframe ? iframe.getAttribute( 'src' ) : '' );
 
 			if ( driver.mountInline( element, context ) === true ) {
 				element.setAttribute( 'data-space2book-ready', '1' );
