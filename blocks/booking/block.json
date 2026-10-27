@@ -1,0 +1,41 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "space2book/booking",
+	"version": "0.1.0",
+	"title": "Space2Book booking",
+	"category": "widgets",
+	"icon": "calendar-alt",
+	"description": "Show the Space2Book booking form as a booking button, an inline form or a direct link.",
+	"keywords": [ "booking", "reservation", "meeting room", "workspace" ],
+	"textdomain": "space2book",
+	"attributes": {
+		"venue": {
+			"type": "string",
+			"default": ""
+		},
+		"mode": {
+			"type": "string",
+			"enum": [ "", "button", "inline", "link" ],
+			"default": ""
+		},
+		"language": {
+			"type": "string",
+			"enum": [ "", "auto", "nl", "en", "de", "fr", "es" ],
+			"default": ""
+		},
+		"buttonText": {
+			"type": "string",
+			"default": ""
+		},
+		"height": {
+			"type": "number",
+			"default": 0
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [ "left", "center", "right", "wide", "full" ]
+	},
+	"editorScript": "file:./index.js"
+}

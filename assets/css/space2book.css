@@ -1,0 +1,140 @@
+/* Space2Book booking button, inline embed and modal. */
+
+.space2book-button {
+	display: inline-block;
+	padding: 0.75em 1.5em;
+	border: 2px solid var(--space2book-button-bg, #1d4ed8);
+	border-radius: 4px;
+	background: var(--space2book-button-bg, #1d4ed8);
+	color: var(--space2book-button-color, #fff);
+	font: inherit;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.space2book-button:hover,
+.space2book-button:focus {
+	color: var(--space2book-button-color, #fff);
+	filter: brightness(0.92);
+	text-decoration: none;
+}
+
+.space2book-button:focus-visible,
+.space2book-modal__close:focus-visible {
+	outline: 3px solid currentColor;
+	outline-offset: 2px;
+}
+
+.space2book-button:focus-visible {
+	outline-color: var(--space2book-button-bg, #1d4ed8);
+}
+
+.space2book-inline iframe {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	border: 0;
+}
+
+.space2book-fallback {
+	margin: 0.5em 0 0;
+	font-size: 0.875em;
+}
+
+.space2book-sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.space2book-modal__sentinel {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.space2book-modal-open {
+	overflow: hidden;
+}
+
+.space2book-modal {
+	box-sizing: border-box;
+	width: min(960px, calc(100vw - 2rem));
+	height: min(860px, calc(100vh - 2rem));
+	max-width: none;
+	max-height: none;
+	padding: 0;
+	border: 0;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+.space2book-modal::backdrop {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.space2book-modal__frame {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.space2book-modal__close {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.95);
+	color: #1e1e1e;
+	font-size: 1.75rem;
+	line-height: 1;
+	cursor: pointer;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+	.space2book-modal {
+		width: 100vw;
+		height: 100vh;
+		height: 100dvh;
+		border-radius: 0;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.space2book-modal[open] {
+		animation: space2book-fade-in 0.15s ease-out;
+	}
+}
+
+@keyframes space2book-fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
