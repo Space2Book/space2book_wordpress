@@ -1,0 +1,295 @@
+# Copyright (C) 2026 Space2Book
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Space2Book 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/Space2Book/space2book_wordpress/issues\n"
+"POT-Creation-Date: 2026-10-27T10:19:06+00:00\n"
+"PO-Revision-Date: 2026-10-27 00:00+0000\n"
+"Last-Translator: Space2Book\n"
+"Language-Team: French\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: space2book\n"
+"X-Generator: WP-CLI 2.12.0\n"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: space2book.php includes/class-admin.php:61 includes/class-admin.php:62
+msgid "Space2Book"
+msgstr "Space2Book"
+
+#. Plugin URI of the plugin
+#: space2book.php
+msgid "https://github.com/Space2Book/space2book_wordpress"
+msgstr "https://github.com/Space2Book/space2book_wordpress"
+
+#. Description of the plugin
+#: space2book.php
+msgid ""
+"Embed the public Space2Book booking form on your WordPress site as a modal "
+"booking button, an inline form or a direct link."
+msgstr ""
+"Intégrez le formulaire de réservation public Space2Book à votre site "
+"WordPress sous forme de bouton de réservation ouvrant une fenêtre modale, de"
+" formulaire intégré ou de lien direct."
+
+#: includes/class-admin.php:78
+msgid "Settings"
+msgstr "Réglages"
+
+#: includes/class-admin.php:101
+msgid "General"
+msgstr "Général"
+
+#: includes/class-admin.php:102
+msgid "Display"
+msgstr "Affichage"
+
+#: includes/class-admin.php:103
+msgid "Button appearance"
+msgstr "Apparence du bouton"
+
+#: includes/class-admin.php:107 blocks/booking/index.js:61
+msgid "Public venue reference"
+msgstr "Référence publique du lieu"
+
+#: includes/class-admin.php:113
+msgid "Default language"
+msgstr "Langue par défaut"
+
+#: includes/class-admin.php:119
+msgid "Default display mode"
+msgstr "Mode d’affichage par défaut"
+
+#: includes/class-admin.php:125
+msgid "Inline form height"
+msgstr "Hauteur du formulaire intégré"
+
+#: includes/class-admin.php:131
+msgid "Direct links"
+msgstr "Liens directs"
+
+#: includes/class-admin.php:137 blocks/booking/index.js:89
+msgid "Button text"
+msgstr "Texte du bouton"
+
+#: includes/class-admin.php:143
+msgid "Background color"
+msgstr "Couleur d’arrière-plan"
+
+#: includes/class-admin.php:149
+msgid "Text color"
+msgstr "Couleur du texte"
+
+#: includes/class-admin.php:174
+msgid "Usage"
+msgstr "Utilisation"
+
+#: includes/class-admin.php:175
+msgid "Add the \"Space2Book booking\" block to a page, or use the shortcode:"
+msgstr ""
+"Ajoutez le bloc « Réservation Space2Book » à une page ou utilisez le code "
+"court :"
+
+#: includes/class-admin.php:177
+msgid ""
+"Shortcode attributes: venue, mode (button, inline or link), language (nl, "
+"en, de, fr, es or auto), text and height."
+msgstr ""
+"Attributs du code court : venue, mode (button, inline ou link), language "
+"(nl, en, de, fr, es ou auto), text et height."
+
+#: includes/class-admin.php:191
+msgid ""
+"Connect this site to the public booking form of your Space2Book venue. No "
+"API keys are needed."
+msgstr ""
+"Connectez ce site au formulaire de réservation public de votre lieu "
+"Space2Book. Aucune clé d’API n’est nécessaire."
+
+#. translators: %s: domain name of this website.
+#: includes/class-admin.php:196
+#, php-format
+msgid ""
+"Space2Book only allows embedded booking forms on registered domains. Make "
+"sure %s is registered for your venue in Space2Book."
+msgstr ""
+"Space2Book n’autorise les formulaires de réservation intégrés que sur les "
+"domaines enregistrés. Assurez-vous que %s est enregistré pour votre lieu "
+"dans Space2Book."
+
+#: includes/class-admin.php:217
+msgid ""
+"The public reference of your venue, as shown in your Space2Book account. "
+"Letters, digits, hyphens and underscores only."
+msgstr ""
+"La référence publique de votre lieu, telle qu’affichée dans votre compte "
+"Space2Book. Lettres, chiffres, traits d’union et tirets bas uniquement."
+
+#: includes/class-admin.php:251
+msgid "pixels"
+msgstr "pixels"
+
+#: includes/class-admin.php:265
+msgid "Open direct links in a new tab"
+msgstr "Ouvrir les liens directs dans un nouvel onglet"
+
+#: includes/class-admin.php:279 includes/class-renderer.php:70
+msgid "Book now"
+msgstr "Réserver"
+
+#: includes/class-admin.php:283
+msgid "Leave empty to use the translated default text."
+msgstr "Laissez vide pour utiliser le texte par défaut traduit."
+
+#: includes/class-admin.php:311 blocks/booking/index.js:25
+msgid "Automatic (site language)"
+msgstr "Automatique (langue du site)"
+
+#: includes/class-admin.php:312 blocks/booking/index.js:26
+msgid "Dutch"
+msgstr "Néerlandais"
+
+#: includes/class-admin.php:313 blocks/booking/index.js:27
+msgid "English"
+msgstr "Anglais"
+
+#: includes/class-admin.php:314 blocks/booking/index.js:28
+msgid "German"
+msgstr "Allemand"
+
+#: includes/class-admin.php:315 blocks/booking/index.js:29
+msgid "French"
+msgstr "Français"
+
+#: includes/class-admin.php:316 blocks/booking/index.js:30
+msgid "Spanish"
+msgstr "Espagnol"
+
+#: includes/class-admin.php:327 blocks/booking/index.js:18
+msgid "Booking button (opens a modal)"
+msgstr "Bouton de réservation (ouvre une fenêtre modale)"
+
+#: includes/class-admin.php:328 blocks/booking/index.js:19
+msgid "Inline form"
+msgstr "Formulaire intégré"
+
+#: includes/class-admin.php:329 blocks/booking/index.js:20
+msgid "Direct link"
+msgstr "Lien direct"
+
+#: includes/class-renderer.php:94
+msgid ""
+"Space2Book: no venue reference configured. Set one in Settings → Space2Book "
+"or pass it to the block or shortcode."
+msgstr ""
+"Space2Book : aucune référence de lieu n’est configurée. Définissez-en une "
+"dans Réglages → Space2Book ou indiquez-la dans le bloc ou le code court."
+
+#: includes/class-renderer.php:100
+msgid "Space2Book: the booking URL could not be generated."
+msgstr "Space2Book : l’URL de réservation n’a pas pu être générée."
+
+#: includes/class-renderer.php:160 includes/class-sdk-adapter.php:231
+msgid "Space2Book booking form"
+msgstr "Formulaire de réservation Space2Book"
+
+#: includes/class-renderer.php:191
+msgid "Open the booking form"
+msgstr "Ouvrir le formulaire de réservation"
+
+#: includes/class-renderer.php:220
+msgid "(opens in a new tab)"
+msgstr "(s’ouvre dans un nouvel onglet)"
+
+#: includes/class-sdk-adapter.php:229
+msgid "Booking form"
+msgstr "Formulaire de réservation"
+
+#: includes/class-sdk-adapter.php:230
+msgid "Close booking form"
+msgstr "Fermer le formulaire de réservation"
+
+#: blocks/booking/index.js:17 blocks/booking/index.js:24
+msgid "Default (from settings)"
+msgstr "Par défaut (depuis les réglages)"
+
+#. translators: 1: display mode, 2: venue reference.
+#: blocks/booking/index.js:46
+#, js-format
+msgid "Display: %1$s · Venue: %2$s"
+msgstr "Affichage : %1$s · Lieu : %2$s"
+
+#: blocks/booking/index.js:48
+msgid "default from settings"
+msgstr "valeur par défaut des réglages"
+
+#: blocks/booking/index.js:59
+msgid "Booking settings"
+msgstr "Réglages de réservation"
+
+#: blocks/booking/index.js:62
+msgid "Leave empty to use the venue from Settings → Space2Book."
+msgstr "Laissez vide pour utiliser le lieu défini dans Réglages → Space2Book."
+
+#: blocks/booking/index.js:70
+msgid "Display mode"
+msgstr "Mode d’affichage"
+
+#: blocks/booking/index.js:79
+msgid "Language"
+msgstr "Langue"
+
+#: blocks/booking/index.js:90
+msgid "Leave empty to use the default text."
+msgstr "Laissez vide pour utiliser le texte par défaut."
+
+#: blocks/booking/index.js:101
+msgid "Inline form height (pixels)"
+msgstr "Hauteur du formulaire intégré (pixels)"
+
+#: blocks/booking/index.js:102
+msgid "Leave empty to use the default height."
+msgstr "Laissez vide pour utiliser la hauteur par défaut."
+
+#: blocks/booking/index.js:117
+msgid "Space2Book booking"
+msgstr "Réservation Space2Book"
+
+#: blocks/booking/block.json
+msgctxt "block title"
+msgid "Space2Book booking"
+msgstr "Réservation Space2Book"
+
+#: blocks/booking/block.json
+msgctxt "block description"
+msgid ""
+"Show the Space2Book booking form as a booking button, an inline form or a "
+"direct link."
+msgstr ""
+"Affiche le formulaire de réservation Space2Book sous forme de bouton de "
+"réservation, de formulaire intégré ou de lien direct."
+
+#: blocks/booking/block.json
+msgctxt "block keyword"
+msgid "booking"
+msgstr "réservation"
+
+#: blocks/booking/block.json
+msgctxt "block keyword"
+msgid "reservation"
+msgstr "réserver"
+
+#: blocks/booking/block.json
+msgctxt "block keyword"
+msgid "meeting room"
+msgstr "salle de réunion"
+
+#: blocks/booking/block.json
+msgctxt "block keyword"
+msgid "workspace"
+msgstr "espace de travail"
